@@ -4,10 +4,10 @@ spring:
       ddl-auto: update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-  datasource:
-    url: jdbc:postgresql://ec2-3-225-41-234.compute-1.amazonaws.com:5432/df6fg1fs3j84mb
-    username: kooqdktprqnrda
-    password: 10f366674ef4b0ba3f5001cecab3d17dd6bef42e0f24176c05ee882799ea8f7d
+#  datasource:
+#    url: jdbc:postgresql://ec2-3-225-41-234.compute-1.amazonaws.com:5432/df6fg1fs3j84mb
+#    username: kooqdktprqnrda
+#    password: 10f366674ef4b0ba3f5001cecab3d17dd6bef42e0f24176c05ee882799ea8f7d
   jackson:
     mapper:
       accept-case-insensitive-properties: true
