@@ -23,10 +23,10 @@ public class SmsService {
     @Value(value = "${admin.phoneNumber}")
     String adminPhoneNumber;
 
-    @Value(value = "${Twilio.accountSid}")
+    @Value(value = "${twilio.accountSid}")
     String twilioAccountSid;
 
-    @Value(value = "${Twilio.authToken}")
+    @Value(value = "${twilio.authToken}")
     String twilioAuthToken;
 
 
