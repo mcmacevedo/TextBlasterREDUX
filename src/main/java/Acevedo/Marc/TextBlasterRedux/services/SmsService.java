@@ -30,7 +30,6 @@ public class SmsService {
     String twilioAuthToken;
 
 
-
     public void processTwilioMessage(TwilioMessage message) {
         String sender = message.getFrom();
         if (attendeesByPhoneNumber.containsKey(sender)) {

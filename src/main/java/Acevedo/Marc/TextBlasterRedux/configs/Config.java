@@ -32,6 +32,7 @@ public class Config extends WebSecurityConfigurerAdapter {
 
     @Bean
     public Map<String, Attendee> attendeesByPhoneNumber() {
+        // TODO: Logic for parsing excel file
         return Map.of(
                 "+17324061005",
                 new Attendee("Marc", "Acevedo", "mcmacevedo@gmail.com", "+17324061005", 1));
