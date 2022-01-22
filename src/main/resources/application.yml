@@ -5,9 +5,9 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
-    username:
-    password:
+    url: jdbc:postgresql://ec2-3-225-41-234.compute-1.amazonaws.com:5432/df6fg1fs3j84mb
+    username: kooqdktprqnrda
+    password: 10f366674ef4b0ba3f5001cecab3d17dd6bef42e0f24176c05ee882799ea8f7d
   jackson:
     mapper:
       accept-case-insensitive-properties: true
@@ -16,11 +16,11 @@ spring:
       client:
         registration:
           google:
-            clientId:
-            clientSecret:
+            clientId: test
+            clientSecret: test
             scope:
               - email
               - profile
 admin:
-  phoneNumber:
-  email:
+  phoneNumber: +17324061005
+  email: mcmacevedo@gmail.com
