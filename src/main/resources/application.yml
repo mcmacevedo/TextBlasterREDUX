@@ -20,3 +20,7 @@ spring:
 admin:
   phoneNumber: ${adminPhone}
   email: ${adminEmail}
+
+twilio:
+  accountSid: ${twilioAccountSid}
+  authToken: ${twilioAuthToken}

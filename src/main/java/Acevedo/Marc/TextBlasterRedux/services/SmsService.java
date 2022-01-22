@@ -23,6 +23,14 @@ public class SmsService {
     @Value(value = "${admin.phoneNumber}")
     String adminPhoneNumber;
 
+    @Value(value = "${Twilio.accountSid}")
+    String twilioAccountSid;
+
+    @Value(value = "${Twilio.authToken}")
+    String twilioAuthToken;
+
+
+
     public void processTwilioMessage(TwilioMessage message) {
         String sender = message.getFrom();
         if (attendeesByPhoneNumber.containsKey(sender)) {
@@ -35,6 +43,6 @@ public class SmsService {
 
     @PostConstruct
     public void initializeTwilioContext() {
-        Twilio.init("", "");
+        Twilio.init(twilioAccountSid, twilioAuthToken);
     }
 }
