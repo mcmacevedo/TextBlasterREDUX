@@ -35,6 +35,6 @@ public class SmsService {
 
     @PostConstruct
     public void initializeTwilioContext() {
-        Twilio.init("AC2ad2ef4e9398442783404ea862263188", "456ddb4403ec5d38cf2e585fea9af69f");
+        Twilio.init("", "");
     }
 }
