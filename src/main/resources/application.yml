@@ -1,0 +1,26 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: password
+  jackson:
+    mapper:
+      accept-case-insensitive-properties: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 54989428904-ghrdrqvhtag71l7urbh1taehnreps3ag.apps.googleusercontent.com
+            clientSecret: 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
+            scope:
+              - email
+              - profile
+admin:
+  phoneNumber: "+17324061005"
+  email: "mcmacevedo@gmail.com"
