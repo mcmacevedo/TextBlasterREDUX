@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: "Text Blaster Redux"
   jpa:
     hibernate:
       ddl-auto: update
