@@ -26,3 +26,6 @@ admin:
 twilio:
   accountSid: ${twilioAccountSid}
   authToken: ${twilioAuthToken}
+
+excel:
+  path: src/main/resources/Book1.xlsx
